@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{c859e6f3-e37f-4327-9bd6-37b321b443f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mactivecfg">
+      <UniqueIdentifier>{6a07fe2d-e4fa-4811-90a3-89c611c819a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mpassivecfg">
+      <UniqueIdentifier>{6571328a-5c60-41ee-8239-c45341482be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{437dad90-8d6a-4f09-b5b0-36afac6295e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mactivecfg">
+      <UniqueIdentifier>{b368b99f-0c14-4679-9fe1-e83d37a9f5c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mpassivecfg">
+      <UniqueIdentifier>{cf884200-c067-4ce1-a27a-747493a5690c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\msqlitewrapper">
+      <UniqueIdentifier>{58726f27-46fe-4f45-9c64-1c8592178d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\msqlitewrapper">
+      <UniqueIdentifier>{ccb47a14-4485-4acf-a215-53b0506f3e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sqlite">
+      <UniqueIdentifier>{68c89255-6366-46da-a605-5dd9d343e20e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sqlite">
+      <UniqueIdentifier>{c191c231-d97c-4d80-8b80-cea6dc3166ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\IMsvConfigKey.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\IMsvConfigKeyMap.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\MsvConfigKey.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\MsvConfigKeyMapBase.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mactivecfg\IMsvActiveConfig.h">
+      <Filter>Header Files\mactivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mactivecfg\MsvActiveConfig.h">
+      <Filter>Header Files\mactivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mactivecfg\MsvActiveConfig_Factory.h">
+      <Filter>Header Files\mactivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpassivecfg\IMsvPassiveConfig.h">
+      <Filter>Header Files\mpassivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpassivecfg\MsvPassiveConfig.h">
+      <Filter>Header Files\mpassivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\msqlitewrapper\IMsvSQLite.h">
+      <Filter>Header Files\msqlitewrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\msqlitewrapper\IMsvSQLiteCallback.h">
+      <Filter>Header Files\msqlitewrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\msqlitewrapper\MsvSQLite.h">
+      <Filter>Header Files\msqlitewrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\sqlite\sqlite3.h">
+      <Filter>Header Files\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\IMsvDefaultValue.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\MsvDefaultValue.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mactivecfg\IMsvActiveConfigCallback.h">
+      <Filter>Header Files\mactivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mactivecfg\IMsvActiveConfigStorage.h">
+      <Filter>Header Files\mactivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mactivecfg\IMsvActiveConfigStorageCallback.h">
+      <Filter>Header Files\mactivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mactivecfg\MsvActiveConfigStorage.h">
+      <Filter>Header Files\mactivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mactivecfg\MsvActiveConfigStorage_Factory.h">
+      <Filter>Header Files\mactivecfg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mpassivecfg\MsvPassiveConfigBase.h">
+      <Filter>Header Files\mpassivecfg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\MsvConfigKey.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mactivecfg\MsvActiveConfig.cpp">
+      <Filter>Source Files\mactivecfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpassivecfg\MsvPassiveConfig.cpp">
+      <Filter>Source Files\mpassivecfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\msqlitewrapper\MsvSQLite.cpp">
+      <Filter>Source Files\msqlitewrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\sqlite\sqlite3.c">
+      <Filter>Source Files\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\MsvDefaultValue.cpp">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mactivecfg\MsvActiveConfigStorage.cpp">
+      <Filter>Source Files\mactivecfg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\mpassivecfg\MsvPassiveConfigBase.cpp">
+      <Filter>Source Files\mpassivecfg</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
