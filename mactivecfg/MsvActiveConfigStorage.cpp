@@ -244,7 +244,6 @@ MsvErrorCode MsvActiveConfigStorage::GetValue(int32_t cfgId, std::string& value)
 	//it is compability for program updates
 	if (sqlResult.empty() || sqlResult[0].empty())
 	{
-		MsvErrorCode tempErrorCode = MSV_SUCCESS;
 		if (MSV_FAILED(errorCode = const_cast<MsvActiveConfigStorage*>(this)->StoreDefaultValue(cfgId)))
 		{
 			//store default value failed (returning original error code)

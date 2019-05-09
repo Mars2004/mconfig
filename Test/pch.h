@@ -8,7 +8,6 @@
 
 #include "mlogging/MsvSpdLogLoggerProvider.h"
 
-#include "merror/MsvCompiler.h"
 MSV_DISABLE_ALL_WARNINGS
 
 #include "gtest/gtest.h"

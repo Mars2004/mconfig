@@ -38,7 +38,7 @@ along with Foobar. If not, see <https://www.gnu.org/licenses/>.
 #define MARSTECH_ISQLITECALLBACK_H
 
 
-#include "merror/MsvCompiler.h"
+#include "mheaders/MsvCompiler.h"
 MSV_DISABLE_ALL_WARNINGS
 
 #include <cstdint>
