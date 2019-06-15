@@ -123,7 +123,6 @@ public:
 	/**************************************************************************************************//**
 	* @brief			Constructor.
 	* @param[in]	spLogger			Shared pointer to logger for logging.
-	* @see			MsvActiveConfig_Factory
 	******************************************************************************************************/
 	MsvActiveConfig(std::shared_ptr<MsvLogger> spLogger);
 

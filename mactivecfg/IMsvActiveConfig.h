@@ -71,7 +71,7 @@ public:
 	* @retval		MSV_ALLOCATION_ERROR				When memory allocation failed.
 	* @retval		MSV_INVALID_DATA_ERROR			When value has different type then requested.
 	* @retval		MSV_NOT_FOUND_ERROR				When config value has not been found in database.
-	* @retval		other error code					When failed.
+	* @retval		other_error_code					When failed.
 	* @retval		MSV_SUCCESS							On success.
 	******************************************************************************************************/
 	virtual MsvErrorCode Initialize(std::shared_ptr<IMsvConfigKeyMap<IMsvDefaultValue>> spConfigKeyMap, const char* configPath = "config.db", const char* groupName = "MsvConfig") = 0;
@@ -80,7 +80,7 @@ public:
 	* @brief			Uninitialize active configuration.
 	* @details		Uninitialize active configuration and release all loaded data.
 	* @retval		MSV_NOT_INITIALIZED_INFO		When config has not been initialized (this is info, not error).
-	* @retval		other error code					When failed.
+	* @retval		other_error_code					When failed.
 	* @retval		MSV_SUCCESS							On success.
 	******************************************************************************************************/
 	virtual MsvErrorCode Uninitialize() = 0;
@@ -155,7 +155,7 @@ public:
 	* @param[out]	value		New value of config ID.
 	* @retval		MSV_NOT_INITIALIZED_ERROR	When config has not been initialized.
 	* @retval		MSV_NOT_FOUND_ERROR			When config ID (cfgId) does not exist.
-	* @retval		other error code				When failed.
+	* @retval		other_error_code				When failed.
 	* @retval		MSV_SUCCESS						On success.
 	******************************************************************************************************/
 	virtual MsvErrorCode SetValue(int32_t cfgId, bool value) = 0;
@@ -167,7 +167,7 @@ public:
 	* @param[out]	value		New value of config ID.
 	* @retval		MSV_NOT_INITIALIZED_ERROR	When config has not been initialized.
 	* @retval		MSV_NOT_FOUND_ERROR			When config ID (cfgId) does not exist.
-	* @retval		other error code				When failed.
+	* @retval		other_error_code				When failed.
 	* @retval		MSV_SUCCESS						On success.
 	******************************************************************************************************/
 	virtual MsvErrorCode SetValue(int32_t cfgId, double value) = 0;
@@ -179,7 +179,7 @@ public:
 	* @param[out]	value		New value of config ID.
 	* @retval		MSV_NOT_INITIALIZED_ERROR	When config has not been initialized.
 	* @retval		MSV_NOT_FOUND_ERROR			When config ID (cfgId) does not exist.
-	* @retval		other error code				When failed.
+	* @retval		other_error_code				When failed.
 	* @retval		MSV_SUCCESS						On success.
 	******************************************************************************************************/
 	virtual MsvErrorCode SetValue(int32_t cfgId, int64_t value) = 0;
@@ -191,7 +191,7 @@ public:
 	* @param[out]	value		New value of config ID.
 	* @retval		MSV_NOT_INITIALIZED_ERROR	When config has not been initialized.
 	* @retval		MSV_NOT_FOUND_ERROR			When config ID (cfgId) does not exist.
-	* @retval		other error code				When failed.
+	* @retval		other_error_code				When failed.
 	* @retval		MSV_SUCCESS						On success.
 	******************************************************************************************************/
 	virtual MsvErrorCode SetValue(int32_t cfgId, const std::string& value) = 0;
@@ -203,7 +203,7 @@ public:
 	* @param[out]	value		New value of config ID.
 	* @retval		MSV_NOT_INITIALIZED_ERROR	When config has not been initialized.
 	* @retval		MSV_NOT_FOUND_ERROR			When config ID (cfgId) does not exist.
-	* @retval		other error code				When failed.
+	* @retval		other_error_code				When failed.
 	* @retval		MSV_SUCCESS						On success.
 	******************************************************************************************************/
 	virtual MsvErrorCode SetValue(int32_t cfgId, uint64_t value) = 0;
@@ -238,7 +238,7 @@ public:
 	* @param[out]	value		New value of config ID.
 	* @retval		MSV_NOT_INITIALIZED_ERROR	When config has not been initialized.
 	* @retval		MSV_NOT_FOUND_ERROR			When config ID (cfgId) does not exist.
-	* @retval		other error code				When failed.
+	* @retval		other_error_code				When failed.
 	* @retval		MSV_SUCCESS						On success.
 	******************************************************************************************************/
 	inline MsvErrorCode SetValue(int32_t cfgId, const char* value)

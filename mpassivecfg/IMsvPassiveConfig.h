@@ -140,6 +140,14 @@ public:
 	* @retval		MSV_SUCCESS						On success.
 	******************************************************************************************************/
 	virtual MsvErrorCode ReloadConfiguration() = 0;
+
+	template<class T, class T1> MsvErrorCode GetValue(int32_t cfgId, T& value)
+	{
+		T1 tempValue;
+		MsvErrorCode errorCode = GetValue(cfgId, tempValue);
+		value = static_cast<T>(tempValue);
+		return errorCode;
+	}
 };
 
 
